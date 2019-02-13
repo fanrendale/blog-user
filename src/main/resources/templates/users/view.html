@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--引入头部-->
+<head th:replace="~{fragments/header :: header}">
+</head>
+<body>
+
+<div class="container blog_content_container">
+    <h1 th:text="${userModel.title}" style="color: #6c757d"></h1>
+    <div th:object="${userModel.user}">
+        <p><strong>ID:</strong><label th:text="*{id}"></label></p>
+        <p><strong>姓名:</strong><label th:text="*{name}"></label></p>
+        <p><strong>邮箱:</strong><label th:text="*{email}"></label></p>
+
+        <a class="btn btn-danger" th:href="@{/users/del/}+*{id}">删除</a>
+        <a class="btn btn-primary" th:href="@{/users/modify/}+*{id}">修改</a>
+    </div>
+</div>
+<!--引入底部-->
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>
