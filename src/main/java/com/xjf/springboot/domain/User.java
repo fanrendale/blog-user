@@ -46,12 +46,11 @@ public class User {
     protected User() {  //无参构造，设为protected，防止直接使用
     }
 
-    public User(String name, String email, String username, String password, String avatar) {
+    public User(String name, String email, String username, String passwordy) {
         this.name = name;
         this.email = email;
         this.username = username;
         this.password = password;
-        this.avatar = avatar;
     }
 
     public User(Long id, String name, String email) {

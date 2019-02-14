@@ -45,26 +45,27 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     //添加Thymeleaf的依赖
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.1.2.RELEASE'
 
     //引入lombok
-    // https://mvnrepository.com/artifact/org.projectlombok/lombok
 //    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
 
     //引入jpa的依赖
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.1.2.RELEASE'
 
     //引入mysql驱动的依赖
-    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.13'
 
     //引入H2依赖
-    // https://mvnrepository.com/artifact/com.h2database/h2
     runtime group: 'com.h2database', name: 'h2', version: '1.4.197'
 
     // 添加Apache Commons Lang依赖
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+
+    //引入spring-boot-starter-security依赖
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.2.RELEASE'
+
+    //引入thymeleaf-extras-springsecurity4依赖
+//    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity4', version: '3.0.2.RELEASE'
 
 }
